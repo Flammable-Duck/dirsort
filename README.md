@@ -1,4 +1,4 @@
-sort files by type into subdirectories
+```sort files by type into subdirectories
  dirsort <directory>
   -dry
     	list changes to be made without making any modifications
@@ -6,3 +6,4 @@ sort files by type into subdirectories
     	Show help
   -yes
     	assume yes to all questions
+```

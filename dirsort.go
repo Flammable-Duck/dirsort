@@ -74,10 +74,6 @@ func main() {
     flag.BoolVar(&yes, "yes", false, "assume yes to all questions")
     flag.Parse()
 
-    fmt.Println(dry)
-    fmt.Println(yes)
-    fmt.Println(help)
-
     dir = flag.Arg(0)
     if dir == "" || help == true {
         usage()
@@ -119,7 +115,7 @@ func main() {
 
     for k, v := range types {
         if v > 1 && k != "empty" {
-            os.Mkdir(fmt.Sprintf("%s/%s", dir, k), 755)
+            os.Mkdir(fmt.Sprintf("%s/%s", dir, k), 0755)
             for _, f := range files {
                 if f.tpe == k {
                     dest := fmt.Sprintf("%s/%s/%s", dir, k, f.basename)

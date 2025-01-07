@@ -1,4 +1,5 @@
-```sort files by type into subdirectories
+```
+sort files by type into subdirectories
  dirsort <directory>
   -dry
     	list changes to be made without making any modifications
